@@ -1,0 +1,25 @@
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .col {
+        // border: $border;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.col_heading {
+    text-align: center;
+    font-size: 4.5em;
+    font-weight: 900;
+    // line-height: 4rem;
+    padding: .5rem 0;
+}
+
+.quizboard {
+    height: 80%;
+    width: 80%;
+}

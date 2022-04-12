@@ -1,0 +1,26 @@
+.navbar {
+    width: 100vw;
+    height: 4rem;
+    background-color: $secondary_color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $primary-color;
+    padding: 0 1rem;
+    flex-wrap: wrap;
+
+    .nav ul {
+        display: flex;
+
+        li {
+            padding: 0 .5rem;
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: $primary-color;
+                font-weight: 500;
+            }
+        }
+    }
+}
