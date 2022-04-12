@@ -20,3 +20,8 @@
     background-color: $secondary-color;
     color: $primary-color;
 }
+
+.col-end {
+    display: flex;
+    justify-content: flex-end;
+}

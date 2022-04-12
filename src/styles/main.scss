@@ -19,13 +19,8 @@ body {
 /*****************************************Hero**************************/
 @import "utilities";
 
-/*****************************************Container**************************/
-
-.container {
-    // max-width: 760px;
-    padding: 0 1rem;
-    // overflow: hidden;
-}
+/*****************************************Container************************/
+@import "container";
 
 /*****************************************Hero**************************/
 
@@ -57,7 +52,7 @@ body {
     .cta {
         padding: .5rem;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         width: 100%;
 

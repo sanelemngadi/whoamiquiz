@@ -2,12 +2,27 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    .col {
+    .col:first-of-type {
         // border: $border;
         padding: 1rem 0;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .col:last-of-type {
+        // border: $border;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+}
+
+.col:first-child {
+    .cta {
+        justify-content: flex-start;
+        margin-top: 1rem;
     }
 }
 
@@ -15,11 +30,43 @@
     text-align: center;
     font-size: 4.5em;
     font-weight: 900;
-    // line-height: 4rem;
     padding: .5rem 0;
 }
 
 .quizboard {
-    height: 80%;
-    width: 80%;
+    height: 90%;
+    width: 90%;
+}
+
+.navbar {
+
+    .nav ul {
+        display: flex;
+
+        li {
+            border: none;
+            margin: 0 0.3rem;
+            padding: 0;
+        }
+
+        li::after {
+            content: "";
+            display: inherit;
+            width: 120%;
+            height: 0.2rem;
+            background: cyan;
+            transform: scaleX(0);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        li:hover::after {
+            content: "";
+            transform: scale(1);
+            transition: transform 0.5s ease-in-out;
+        }
+
+        a {
+            padding: 0 1rem;
+        }
+    }
 }

@@ -14,7 +14,7 @@ function Hero() {
                         <Link to='#' className='btn btn-primary' type="button">Watch videos {'>'}{'>'}</Link>
                     </div>
                 </div>
-                <div className="col">
+                <div className="col col-end">
                     <img className='quizboard' src={quizboard} alt="quiz board" />
                 </div>
             </div>
